@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/688302c750.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+      <div id="header">
+        <div class="container">
+            <nav>
+              <img src="images/logo.jpeg" class="logo">
+              <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+              </ul>
+              <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+              <p>Web Developer</p>
+              <h1>Hi, I'm <span>Saumya</span>  <br>Kashyap</h1>
+            </div>
+        </div>
+      </div>
+      <!-------about-->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About me</h1>
+              <p>Dedicated and ambitious fourth-year B.Tech student majoring in Computer Science and
+                Engineering. Proficient in programming languages like HTML/CSS, JavaScript Java, Python ,C and C++. Passionate
+                about exploring new technologies and eager to contribute to innovative projects.</p>
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('programming')"">Programming languages</p>
+                  <p class="tab-links" onclick="opentab('education')"">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Data Structure</span><br>& Algorithms </li>
+                  <li><span>HTML,CSS</span><br>JavaScript </li>
+                  <li><span>MySql</span><br>Management </li>
+                  <li><span>Critical Thinking</span><br>Team Leadership </li>
+                  <li><span>Promblem</span><br>Solving </li>
+                </ul>
+                </div>
+                <div class="tab-contents" id="programming">
+                  <ul>
+                    <li><span>JAVA</span><br>(Intermediate)</li>
+                    <li><span>C/C++</span><br>(Intermediate)</li>
+                    <li><span>PYTHON</span><br>(Intermediate)</li>
+                    
+                  </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                      <li><span>10th</span><br>S R Public School<br>91.2%</li>
+                      <li><span>12th</span><br>ST John's Academy<br>72.8%</li>
+                      <li><span>BTECH(Cse)</span><br>Bengal Institute Of technology<br>2021-2025<br>8.14sgpa<br>Kolkata</li>
+                      
+                    </ul>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---courses-->
+      <div id="courses">
+        <div class="container">
+          <h1 class="sub-title"> Course Certificates</h1>
+          <div class="courses-list">
+            <div>
+              
+              <h2>
+<h3><p><a href="https://www.coursera.org/account/accomplishments/verify/V2TVDWMVKX5A?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse">
+                  Programming for Everybody(Getting started in python)
+                </a>
+                </p></h3>
+              </div>
+              <div>
+                
+              <h3><p>
+                  <a href="https://www.coursera.org/account/accomplishments/verify/4C8RA9TATAJU?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse">
+                    Data Science Ethics
+                  </a>
+                </p></h3></div>
+               <div><h3> <p>
+                  <a href="https://www.coursera.org/account/accomplishments/specialization/FQS7N46HNF9N?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Ds12n">
+                    Google Data Analytics Professional Certificate
+                  </a>
+                </p></h3></div>
+                <div><h3><p>
+                  <a href="https://www.coursera.org/account/accomplishments/verify/G3M3X48BWL9A?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse">
+                    Crash Course on Python
+                  </a>
+                </p></h3></div>
+               <div><h3> <p>
+                  <a href="https://www.udemy.com/certificate/UC-66a4229f-2aa6-435c-902a-de700af2bbc9/">
+                    HTML&CSS
+                  </a></p></h3></div>
+                 <div><h3> <P>
+                    <a href="https://www.udemy.com/certificate/UC-00e31bbc-47b2-4972-821a-6f5849f0d6d0/">
+                      JavaScript
+                    </a>
+                  </P></h3></div>
+              </h2>
+            
+            
+              
+            
+          </div>
+        </div>
+      </div>
+      <!------portfolio-->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/work-1.png">
+              <div class="layer">
+                <h3>Melody Mart</h3>
+                <p>Discover a wide range of music albums and products.Our new e-commerce website is designed to provide music enthusiasts with a comprehensive shopping experience.</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-2.png">
+              <div class="layer">
+                <h3>Weather App</h3>
+                <p>A reliable tool that provides real-time weather updates, forecasts, and alerts, helping users stay prepared for any weather conditions.</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-3.png">
+              <div class="layer">
+                <h3>Tic-Tac-Toe Web Application</h3>
+                <p>A simple and engaging mobile game that allows users to play Tic Tac Toe against friends or an AI opponent, with intuitive design and smooth gameplay</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+      <!----contact--->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>sauhjp@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>7488864852</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/eva.kashyap.75?mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/saumya_kashyap10?igsh=MXVlZTJhbWV6NmZ1bA=="><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/saumya-kashyap10?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://github.com/SaumyaKashyap10"><i class="fa-brands fa-square-github"></i></i></a>
+              </div>
+              <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+              <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                </form>
+              
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright made by <i class="fa-solid fa-heart"></i> @ Saumya Kashyap</p>
+        </div>
+      </div>
+
+      
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+      </script>
+
+        <script>
+          var sidemeu = document.getElementById("sidemenu");
+          function openmenu(){
+             sidemeu.style.right="0";
+
+          }
+          function closemenu(){
+             sidemeu.style.right="-200px";
+             
+          }
+      </script>
+    </body>
+</html>
